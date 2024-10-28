@@ -1,0 +1,20 @@
+EDA - Exploratory Data Analysis
+
+1) Overview: > The dataset consists of daily patronage numbers for various public transport services.
+             > Key columns include Date, Local Route, Light Rail, Peak Service, Rapid Route, School and Others
+            
+2) Data Cleaning: > There are no duplicate entries in the dataset. However, there is one missing value in the 'Other Services' column on
+                    01-07-2019. To handle this missing data, I have set the value to '0' for this field.
+                  > There is no need to convert the 'Date' column into a datetime type, as the dataset does not include specific time information.
+
+3) Descriptive Statistics: > Calculating the Measures of Central Tendency and Measures of Dispersion is very important to 
+                            understand how the data is spread, which helps in analyzing the distribution of patronage.
+                           > It was calculated in the Descriptive Statistics file in this folder. 
+                             I have computed it for the overall data as well as on a yearly basis.
+
+4) Trend Analysis: > To visualize trends over time for each service type, I used an line plots with matplotlib
+                   > From this visualization I can able to see the seasonal patterns like monthly fluctuations   
+                   > Code for this visualization is available in Trend_correlation file
+        
+5) Correlation Analysis: > To understand the relationships between different service types, I have calculated the correlation matrix and visualize it with a heatmap.
+                         > By analyzing this heatmap, I can understand how different service types might influence each other, which is useful for multivariate forecasting and deeper insights into user behavior
