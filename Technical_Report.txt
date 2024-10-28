@@ -1,0 +1,99 @@
+Technical Report 
+
+> For forecasting time series data we can use a time series forecasting model, such as ARIMA or Prophet, 
+  to predict patronage for the next seven days for each transport service.
+
+> I have used an Prophet forecasting model, because it is good for handling seasonality, trend, and holiday effects in time series data.
+
+> After the model selection, the dataset is split into two parts,
+Training Set: The portion of the data used to fit the model (typically the earlier data)
+Testing Set: The remaining data used to evaluate model performance (typically the most recent data)
+
+> Fitting the data into the Prophet model, I have created a data in the required format (with ds for dates and y for values) and
+ fit the model to the training data.
+
+> Create a future dataframe that includes the next seven days, and use the predict method to generate forecasts.
+
+> The forecasts dictionary contains the predictions for each transport service for the next seven days, 
+  which can further analyze or compare to the test data.  
+
+> Trend Analysis -  It is used to identify seasonal patterns (like weekday vs. weekend patterns or monthly fluctuations) and spot any anomalies
+
+> Correlation Analysis - It is used to understand the relationships between different service types, calculate the correlation matrix and visualize it.
+                     Uses a heatmap to visually highlight the strength of these correlations, where:
+                     Values close to +1 indicate a strong positive correlation (they increase together).
+                     Values close to -1 indicate a strong negative correlation (one decreases as the other increases).
+                     Values around 0 indicate little to no linear relationship.
+
+> The forecast of patronage for various transport services over the next seven days. Using time series forecasting method (Prophet), 
+    I have analyzed historical patronage data, identified key trends and seasonality, and generated reliable predictions. 
+    This forecast will aid in resource allocation and operational planning.
+
+> Next 7 Days forecasted values of each Service is,
+
+Forecast for Local Route for the next 7 days:
+    Date       Local Route
+2024-09-30  10579.922575
+2024-10-01  12375.776354
+2024-10-02  12540.870815
+2024-10-03  12391.129935
+2024-10-04  11862.335264
+2024-10-05   2715.001207
+2024-10-06   1790.610792
+
+
+Forecast for Light Rail for the next 7 days:
+    Date        Light Rail
+2024-09-30  7555.557183
+2024-10-01  8609.471383
+2024-10-02  8652.099587
+2024-10-03  8571.437852
+2024-10-04  8601.483803
+2024-10-05  5137.582078
+2024-10-06  3780.016987
+
+
+Forecast for Peak Service for the next 7 days:
+    Date      Peak Services
+2024-09-30  224.720857
+2024-10-01  270.170128
+2024-10-02  269.948535
+2024-10-03  243.406709
+2024-10-04  191.757197
+2024-10-05  -10.124616
+2024-10-06   -8.728335
+
+
+Forecast for Rapid Route for the next 7 days:
+    Date        Rapid Route
+2024-09-30  13450.872752
+2024-10-01  15557.138686
+2024-10-02  15643.280040
+2024-10-03  15453.018058
+2024-10-04  14745.391600
+2024-10-05   6558.313312
+2024-10-06   5108.286395
+
+
+Forecast for School for the next 7 days:
+    Date        School
+2024-09-30  1418.366100
+2024-10-01  1842.340619
+2024-10-02  1902.722900
+2024-10-03  1804.978099
+2024-10-04  1622.710984
+2024-10-05 -1416.836209
+2024-10-06 -1308.492633
+
+
+Forecast for Other for the next 7 days:
+    Date      Other
+2024-09-30  46.284879
+2024-10-01  54.217392
+2024-10-02  58.638338
+2024-10-03  61.388788
+2024-10-04  58.734315
+2024-10-05  24.011127
+2024-10-06  23.944369
+
+The forecast indicates a summary of expected trends in patronage across transport services for next 7 Days.
