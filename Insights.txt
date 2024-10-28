@@ -1,0 +1,19 @@
+This file is about my Insights for this task,
+
+Initially,
+1) By understanding the dataset and by forecasting, I can clearly able to see that the,
+Forecasting trends may reveal consistent weekly patterns, especially for services like 'Peak Service' and 'School Routes', 
+which are likely to show higher patronage on weekdays and lower on weekends.
+
+2) I can observe that more people are using the Light Rail over time, it could mean they prefer it because it’s more reliable or faster. 
+On the other hand, if fewer people are using it, it might be because the service isn't good or there are better transport 
+options available.
+
+3) The correlation analysis might show that people who use Rapid Routes also often use Local Routes. This could mean that they take a Rapid Route 
+for the main part of their trip and a Local Route for getting to or from the station.
+
+4) School Routes may impact overall patronage patterns, especially if school days consistently see a rise in Local Route or Peak Service usage. 
+This pattern could suggest that students contribute significantly to total ridership, influencing peak periods on school days.
+
+5) People are showing less interest on the 'Other' transport service, they have alternatives like "Local Route," "Light Rail," "Peak Service," "Rapid Route," and "School" services, 
+which may provide better options and quality of service. This is my assumption.
